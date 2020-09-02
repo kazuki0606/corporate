@@ -1,0 +1,534 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.menu-btn {
+ 
+  color: black;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+ 
+}
+
+.fa {
+
+  
+  margin-right: 5px;
+}
+
+.menu{
+  position: fixed;
+  top: 66px;
+  right: 0;
+  z-index: 200;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+  padding: 20px 0;
+}
+.menu__item{
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+
+
+.container{
+width: 100%;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+header{
+  width: 100%;
+  height: 65px;
+  background-color: white;
+
+  position: fixed;
+    top: 0;
+    z-index: 10;
+    
+ }
+
+
+ .bill{
+    float: left;
+  height: 30px;    
+  margin-top: 15px;
+  margin-right: 6px;
+
+}
+
+
+ .header-left{
+   float: left;
+
+   line-height:65px;
+   font-size: 25px;
+   color: rgb(71, 144, 255);
+   font-family: Arial;
+  }
+
+
+  .header-left p{
+display: inline;   
+font-weight: bold; 
+
+  }
+  
+  .header-left .lab{
+    color: rgb(102, 207, 255);
+    font-weight: bold;
+  }
+
+  
+
+
+  .header-right{
+    line-height:65px;
+    float: right;
+    margin-right: -25px;
+    font-family: "游ゴシック";
+  }
+  
+  .header-right a{
+    
+    color: black;
+    padding: 0 25px;
+    display: block;
+    float: left;
+    
+  }
+
+  .header-right a:hover{
+
+    background-color: rgb(221, 221, 221);
+  }
+  
+
+  .header-right a.form{
+    background-color: rgb(102, 207, 255);
+    color: white;  
+    font-family: none;
+    
+  }
+  
+  .header-right a.form:hover{
+    
+    background-color: rgb(102, 207, 255,0.3);
+
+  }
+
+/*モーダル*/
+.signup-modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+
+  font-family: "游ゴシック";
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form {
+  width: 100%;
+}
+
+#signup-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color:  rgb(255, 189, 102);;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+  .top-wrapper{
+    background-position: 0% 70%;
+    width: 100%;
+    padding: 110px 0 300px 0;
+    background-image: url("img/t.png");  
+    background-size: cover;
+    text-align: center;
+    color: white;
+ 
+ 
+          
+  }
+  
+
+
+  .top-wrapper h1{
+ 
+    
+    font-family: "Times New Roman";
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 6px rgb(131, 131, 155);
+  }
+
+.top-wrapper p{
+  font-family: "游ゴシック";
+  font-size: 16px;
+  margin-bottom: 40px;
+  
+  text-shadow: 2px 2px 4px rgb(131, 131, 155);
+
+}
+
+.news-wrapper{
+  width: 100%;
+  
+  background-color: rgb(206, 237, 247);
+
+  padding-bottom: 40px;
+  
+}
+
+.news-left{
+float: left;
+margin-left: 15%;
+}
+
+.news-left h2{
+  color: rgb(71, 144, 255);
+  margin-top: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.news-left a{
+  font-size: 12px;
+  color: black;
+  font-family: "游ゴシック";
+}
+
+.news-right{
+  
+  float: left;
+
+margin-top: 45px;
+margin-left: 5%;
+font-size: 12px;
+
+width: 60%;
+font-family: "游ゴシック";
+
+}
+
+.box{
+  border-bottom:  1px solid rgb(71, 144, 255);
+
+padding-bottom: 6px;
+margin-bottom: 10px;
+
+}
+
+.day{
+
+float: left;
+
+}
+
+
+
+
+.tag{
+  float: left;
+display: inline-block;
+
+margin-left: 15px;
+margin-bottom: 1px;
+margin-top: 2px;
+
+
+font-size: 9px;
+
+color: white;
+width: 60px;
+height: 16px;
+line-height: 16px;
+text-align: center;
+background-color: rgb(71, 144, 255);
+
+}
+
+.text{
+  
+  
+  margin-left: 10px;
+
+}
+
+.clear{
+clear: left;
+
+}
+
+.service-wrapper{
+width: 100%;
+  
+  text-align:center;
+
+padding-top: 40px;
+
+background-color: #f7f7f7;
+}
+  .service-wrapper .heading{
+    color: rgb(71, 144, 255);
+  }
+
+  .heading{
+margin-bottom: 40px;
+
+  }
+
+  .heading h2{
+
+font-family: 'Open Sans', sans-serif;
+  }
+
+  .heading p{
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .services{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    
+  }
+
+  .service{
+ flex: auto;
+
+ 
+        
+}
+
+.service img{
+width: 90%;
+
+}
+
+
+.service p{
+width: 80%;
+display: inline-block;
+text-align: left;
+font-family: "游ゴシック";
+}
+
+
+
+/*faq wrapper*/
+.faq-wrapper {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-bottom: 80px;
+  color: #5f5d60;
+  
+}
+
+.faq-wrapper .heading {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.faq-wrapper h2{
+  color: rgb(71, 144, 255);
+
+}
+
+
+
+
+#faq-list {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+  font-family: "游ゴシック";
+}
+
+.faq-list-item h3 {
+  font-size: 14px;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:0;
+  right:5px;
+  color:#ccc;
+  font-size:13px;
+}
+
+.answer {
+  font-size: 12px;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+ display:none;
+}
+
+
+
+
+.message-wrapper{
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  text-align: center;
+  background-color: #e6ecf0;
+}
+
+
+
+.message-wrapper h2{
+  color: rgb(71, 144, 255);
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(102, 207, 255);
+  color: white;
+  padding: 15px 40px;
+  
+  box-shadow: 0px 4px rgb(91, 186, 230);
+  opacity: 0.8;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.btn:hover {
+opacity: 0.3;
+}
+.btn:active{
+position: relative;
+top: 7px;
+box-shadow: none;
+}
+
+footer{
+  width: 100%;
+  padding: 10px;
+  
+  }
+
+
+.bi{
+  float: left;
+  height: 30px;    
+
+  margin-top: -6px;
+  margin-right: 10px;
+ 
+}
+
+
+
+
+footer p{
+  font-size: 20px;
+  color: rgb(71, 144, 255);
+  
+  font-family: Arial;
+
+  font-weight: bold; 
+    }
+
+    footer .lab{
+      color: rgb(102, 207, 255);
+      font-weight: bold;
+    }
+  
