@@ -70,6 +70,7 @@ text-align: center;
   .text {
      
     margin-left: 0px; 
+    margin-top: 20px;
     display: inline-block;
     text-align: left;
     width: 100%;
